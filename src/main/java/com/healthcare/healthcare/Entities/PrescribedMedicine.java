@@ -19,6 +19,9 @@ public class PrescribedMedicine {
     @Column(name = "medicine_name")
     private String medicineName;
 
+    @Column(name = "medicine_name")
+    private String dose;
+
     @ManyToOne
     @JoinColumn(name = "patient_record_id")
     private PatientRecord patientRecord;
